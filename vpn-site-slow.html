@@ -1,66 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VPN 켜면 특정 사이트만 느릴 때 확인 순서 | Path Doctor</title>
-    <meta name="description" content="VPN을 켰을 때 특정 사이트만 느리거나 안 열리는 경우 DNS, 프록시, 라우팅, 회사망 정책, 지역 CDN 문제를 확인하는 순서를 정리합니다.">
-    <link rel="canonical" href="https://uwanggood.github.io/vpn-site-slow.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="VPN 켜면 특정 사이트만 느릴 때 확인 순서">
-    <meta property="og:description" content="VPN은 접속 경로와 DNS를 바꿀 수 있습니다. VPN 전후 결과를 비교하면 원인 후보가 좁아집니다.">
-    <meta property="og:url" content="https://uwanggood.github.io/vpn-site-slow.html">
-    <meta property="og:image" content="https://uwanggood.github.io/assets/path-doctor-cover.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="./styles.css?v=20260621b">
+    <meta http-equiv="refresh" content="0; url=./path-doctor/vpn-site-slow.html">
+    <link rel="canonical" href="https://uwanggood.github.io/path-doctor/vpn-site-slow.html">
+    <title>Path Doctor 가이드로 이동 중</title>
   </head>
   <body>
-    <a class="skip-link" href="#article">본문으로 이동</a>
-    <header class="site-header">
-      <nav class="nav" aria-label="주요 메뉴">
-        <a class="brand" href="./index.html"><span class="brand-mark">P</span><span>Path Doctor</span></a>
-        <div class="nav-links">
-          <a href="./index.html#guides">가이드</a>
-          <a href="https://github.com/Uwanggood/path-doctor-releases/releases/latest">다운로드</a>
-          <a href="https://uwanggood.itch.io/path-doctor">itch.io</a>
-        </div>
-      </nav>
-    </header>
-    <main id="article">
-      <section class="article-hero">
-        <div class="article-shell narrow">
-          <p class="article-kicker">VPN troubleshooting</p>
-          <h1>VPN을 켜면 특정 사이트만 느릴 때 확인 순서</h1>
-          <p>VPN은 보안을 위해 필요하지만, DNS와 라우팅을 바꾸기 때문에 특정 사이트만 느려지는 일이 생길 수 있습니다.</p>
-        </div>
-      </section>
-      <article class="article-shell narrow article-body">
-        <h2>1. VPN을 끈 상태와 켠 상태를 같은 대상에서 비교</h2>
-        <p>같은 사이트를 VPN off/on 상태에서 각각 진단하면 DNS 주소, HTTP 응답 시간, route hop이 어떻게 달라지는지 볼 수 있습니다.</p>
-
-        <h2>2. DNS가 회사망 또는 VPN DNS로 바뀌었는지 확인</h2>
-        <p>VPN 연결 후 내부 DNS가 사용되면 일부 외부 사이트의 위치가 다르게 해석될 수 있습니다. 지역 CDN을 쓰는 사이트에서 특히 체감됩니다.</p>
-
-        <h2>3. 프록시나 보안 검사 장비를 의심</h2>
-        <p>회사 VPN은 웹 트래픽을 보안 장비로 우회시킬 수 있습니다. 특정 도메인만 검사 대상이면 그 사이트만 느려집니다.</p>
-
-        <h2>4. route가 멀리 돌아가는지 확인</h2>
-        <p>VPN 서버 위치가 멀거나, 회사망을 한 번 거쳐 외부로 나가는 구조라면 가까운 사이트도 지연이 늘어날 수 있습니다.</p>
-
-        <div class="callout warning">
-          <strong>비교가 핵심입니다</strong>
-          <p>한 번의 진단보다 VPN off/on 결과를 나란히 비교하는 것이 원인 후보를 훨씬 빨리 줄입니다.</p>
-        </div>
-
-        <h2>Path Doctor 활용</h2>
-        <p>Path Doctor의 기록 기능과 반복 진단을 이용하면 VPN 연결 전후, 시간대별 결과를 저장해두고 비교할 수 있습니다.</p>
-
-        <div class="article-nav">
-          <a href="./dns-normal-site-not-opening.html">다음: DNS는 정상인데 안 열림</a>
-          <a href="./tracert-star-star-star.html">이전: tracert * * *</a>
-        </div>
-      </article>
-    </main>
+    <p><a href="./path-doctor/vpn-site-slow.html">Path Doctor 가이드로 이동합니다.</a></p>
   </body>
 </html>
-

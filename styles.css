@@ -349,6 +349,110 @@ h3 {
   border-color: rgba(13, 124, 116, 0.52);
 }
 
+.directory-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.site-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.site-card h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.site-card p {
+  color: var(--muted);
+}
+
+.site-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.status-pill {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 1px solid rgba(13, 124, 116, 0.28);
+  border-radius: 999px;
+  padding: 0 12px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.site-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.site-meta div {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfcfa;
+}
+
+.site-meta dt {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.site-meta dd {
+  margin: 4px 0 0;
+  overflow-wrap: anywhere;
+  font-weight: 900;
+}
+
+.compact-list {
+  margin: 18px 0 0;
+  padding-left: 1.2rem;
+}
+
+.compact-list li + li {
+  margin-top: 12px;
+}
+
+.registry-table {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.registry-table > div {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.2fr;
+  gap: 12px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.registry-table > div:first-child {
+  border-top: 0;
+  background: var(--primary-soft);
+}
+
+.registry-table span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .download-panel {
   padding: 28px;
   display: grid;
@@ -507,9 +611,15 @@ h3 {
 
   .grid,
   .article-list,
+  .directory-grid,
   .screenshots,
   .download-panel,
   .article-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .site-meta,
+  .registry-table > div {
     grid-template-columns: 1fr;
   }
 

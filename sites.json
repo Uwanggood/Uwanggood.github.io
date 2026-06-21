@@ -1,0 +1,19 @@
+{
+  "owner": "Uwanggood",
+  "updated": "2026-06-21",
+  "sites": [
+    {
+      "name": "Path Doctor",
+      "slug": "path-doctor",
+      "status": "live",
+      "type": "GitHub Pages project folder",
+      "primaryUrl": "https://uwanggood.github.io/path-doctor/",
+      "readableAliasUrl": null,
+      "customDomain": null,
+      "siteRepository": "https://github.com/Uwanggood/Uwanggood.github.io",
+      "releaseRepository": "https://github.com/Uwanggood/path-doctor-releases",
+      "storeUrl": "https://uwanggood.itch.io/path-doctor",
+      "purpose": "SEO landing page and troubleshooting guides for the Path Doctor Windows utility."
+    }
+  ]
+}
