@@ -58,13 +58,14 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-inline: 16px;
   border-bottom: 1px solid rgba(217, 223, 218, 0.78);
   background: rgba(246, 247, 244, 0.94);
   backdrop-filter: blur(12px);
 }
 
 .nav {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1120px, 100%);
   margin: 0 auto;
   min-height: 64px;
   display: flex;
@@ -132,14 +133,17 @@ img {
 }
 
 .hero {
-  min-height: 82vh;
+  min-height: 500px;
+  height: min(620px, calc(100vh - 64px));
   position: relative;
   display: grid;
-  align-items: end;
+  align-items: center;
   isolation: isolate;
   background-image: url("./assets/path-doctor-screenshot-dashboard.png");
-  background-size: cover;
-  background-position: center;
+  background-size: min(1450px, 100vw) auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #172126;
 }
 
 .hero::before {
@@ -147,13 +151,13 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgba(10, 18, 20, 0.72);
+  background: rgba(10, 18, 20, 0.62);
 }
 
 .hero-inner {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 128px 0 72px;
+  padding: 52px 0;
   color: var(--paper);
 }
 
@@ -175,7 +179,7 @@ h3 {
 
 .hero h1 {
   max-width: 780px;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3rem, 6.2vw, 4.8rem);
   letter-spacing: 0;
 }
 
@@ -184,6 +188,7 @@ h3 {
   margin: 22px 0 0;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.08rem, 2vw, 1.36rem);
+  word-break: keep-all;
 }
 
 .hero-actions {
@@ -233,6 +238,7 @@ h3 {
 
 .section-title h2 {
   font-size: clamp(2rem, 4vw, 3rem);
+  word-break: keep-all;
 }
 
 .section-title p {
@@ -280,32 +286,51 @@ h3 {
 }
 
 .screenshot-band .section-title {
+  max-width: 760px;
   color: var(--paper);
+}
+
+.screenshot-band .section-title h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .screenshot-band .section-title p {
   color: rgba(255, 255, 255, 0.72);
+  word-break: keep-all;
 }
 
 .screenshots {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 
 .shot {
   overflow: hidden;
+  display: grid;
+  grid-template-rows: auto minmax(54px, auto);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background: #0f171b;
 }
 
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #edf2ef;
+}
+
 .shot figcaption {
+  align-content: center;
   padding: 12px 14px;
   color: rgba(255, 255, 255, 0.76);
   font-size: 0.94rem;
   font-weight: 800;
+  line-height: 1.45;
 }
 
 .article-list {
@@ -373,7 +398,7 @@ h3 {
 }
 
 .article-shell.narrow {
-  width: min(820px, calc(100% - 32px));
+  width: min(940px, calc(100% - 32px));
 }
 
 .article-kicker {
@@ -386,13 +411,18 @@ h3 {
 .article-hero h1 {
   max-width: 900px;
   margin-top: 14px;
-  font-size: clamp(2.35rem, 6vw, 4.5rem);
+  font-size: clamp(2.2rem, 4.4vw, 3.45rem);
+  line-height: 1.16;
+  text-wrap: balance;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .article-hero p {
   max-width: 760px;
   color: var(--muted);
   font-size: 1.16rem;
+  word-break: keep-all;
 }
 
 .article-body {
@@ -472,7 +502,7 @@ h3 {
   }
 
   .hero-inner {
-    padding-top: 96px;
+    padding: 54px 0;
   }
 
   .grid,
@@ -495,11 +525,50 @@ h3 {
   }
 
   .hero {
-    min-height: 78vh;
+    min-height: 500px;
+    height: auto;
+    background-size: auto 92%;
+    background-position: center center;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: clamp(2.55rem, 12vw, 2.85rem);
+  }
+
+  .hero p {
+    max-width: 20.5rem;
+    font-size: 0.98rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.75rem, 8.4vw, 2.15rem);
+    line-height: 1.18;
+    text-wrap: balance;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .article-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
   }
 
   .section,
