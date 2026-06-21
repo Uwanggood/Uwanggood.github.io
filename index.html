@@ -1,0 +1,182 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Path Doctor | 웹사이트가 느리거나 안 열릴 때 원인 확인</title>
+    <meta name="description" content="Path Doctor는 Windows에서 DNS, ping, 웹 응답, tracert 경로를 한 번에 확인하고 웹사이트가 느리거나 안 열리는 원인을 쉽게 읽어주는 네트워크 진단 도구입니다.">
+    <link rel="canonical" href="https://uwanggood.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Path Doctor | 웹사이트가 느리거나 안 열릴 때 원인 확인">
+    <meta property="og:description" content="Ping, DNS, HTTP 응답, traceroute 결과를 한 화면에서 보고 문제 가능성을 쉽게 확인하세요.">
+    <meta property="og:url" content="https://uwanggood.github.io/">
+    <meta property="og:image" content="https://uwanggood.github.io/assets/path-doctor-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Path Doctor | 웹사이트가 느리거나 안 열릴 때 원인 확인">
+    <meta name="twitter:description" content="DNS, ping, 웹 응답, 이동 경로를 일반 사람이 읽기 쉬운 말로 요약합니다.">
+    <meta name="twitter:image" content="https://uwanggood.github.io/assets/path-doctor-cover.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Path Doctor",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows",
+        "description": "Windows network diagnostic tool that checks DNS, ping, HTTP response, and route hops, then explains likely causes in plain language.",
+        "image": "https://uwanggood.github.io/assets/path-doctor-cover.png",
+        "downloadUrl": "https://github.com/Uwanggood/path-doctor-releases/releases/latest",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://uwanggood.itch.io/path-doctor",
+          "priceCurrency": "USD",
+          "price": "3"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Uwanggood"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="./index.html" aria-label="Path Doctor 홈">
+          <span class="brand-mark">P</span>
+          <span>Path Doctor</span>
+        </a>
+        <div class="nav-links">
+          <a href="#checks">확인 항목</a>
+          <a href="#guides">문제별 가이드</a>
+          <a href="https://github.com/Uwanggood/path-doctor-releases/releases/latest">다운로드</a>
+          <a href="https://uwanggood.itch.io/path-doctor">itch.io</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Path Doctor 소개">
+        <div class="hero-inner">
+          <p class="eyebrow">Windows network diagnostic tool</p>
+          <h1>Path Doctor</h1>
+          <p>웹사이트가 느리거나 안 열릴 때 DNS, ping, HTTP 응답, tracert 이동 경로를 한 번에 확인하고 원인 후보를 쉬운 말로 읽어주는 Windows 진단 도구입니다.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://github.com/Uwanggood/path-doctor-releases/releases/latest">Windows 설치 파일 받기</a>
+            <a class="button secondary" href="#guides">문제별 가이드 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="below-hint">
+        <div class="below-hint-inner">
+          <span>Ping은 정상인데 사이트가 느린가요?</span>
+          <a href="./ping-normal-site-slow.html">먼저 이 경우부터 확인하기</a>
+        </div>
+      </div>
+
+      <section id="checks" class="section">
+        <div class="section-title">
+          <h2>어디서 막히는지 한 화면에서 봅니다</h2>
+          <p>명령어 결과만 던져주는 도구가 아니라, DNS, 왕복 지연, 웹 응답, 경로를 함께 보고 실제로 다음에 무엇을 확인해야 하는지 정리합니다.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <strong>DNS lookup</strong>
+            <p>도메인 이름이 IP 주소로 바뀌는 데 걸리는 시간과 실패 여부를 확인합니다.</p>
+          </article>
+          <article class="card">
+            <strong>Ping and packet loss</strong>
+            <p>왕복 시간과 응답 손실을 보고 Wi-Fi, VPN, ISP, 서버 문제 가능성을 나눕니다.</p>
+          </article>
+          <article class="card">
+            <strong>HTTP response</strong>
+            <p>브라우저에서 실제 웹 요청이 되는지, 응답 시간이 느린지 함께 봅니다.</p>
+          </article>
+          <article class="card">
+            <strong>Traceroute</strong>
+            <p>중간 장비의 응답 제한과 실제 장애 가능성을 구분하기 쉽게 보여줍니다.</p>
+          </article>
+          <article class="card">
+            <strong>Repeat diagnosis</strong>
+            <p>몇 초 또는 몇 분 간격으로 반복 진단하고 기록을 비교할 수 있습니다.</p>
+          </article>
+          <article class="card">
+            <strong>Readable history</strong>
+            <p>나중에 같은 대상의 상태 변화를 다시 볼 수 있게 최근 결과를 저장합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="screenshot-band">
+        <div class="section">
+          <div class="section-title">
+            <h2>tracert가 이상해 보여도 바로 장애는 아닐 수 있습니다</h2>
+            <p>중간 hop의 별표나 응답 없음은 장비가 진단 신호에 답하지 않는 설정일 수도 있습니다. Path Doctor는 웹 응답과 ping을 함께 보고 더 현실적인 설명을 제공합니다.</p>
+          </div>
+          <div class="screenshots">
+            <figure class="shot">
+              <img src="./assets/path-doctor-screenshot-route-analysis.png" alt="Path Doctor route analysis screen showing route segments and response status" width="1440" height="900" loading="lazy">
+              <figcaption>경로 구간과 응답 제한을 함께 보여주는 route analysis 화면</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="./assets/path-doctor-screenshot-updates.png" alt="Path Doctor update check dialog and dashboard" width="1440" height="900" loading="lazy">
+              <figcaption>GitHub Releases 기반 업데이트 확인과 설치 파일 다운로드</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="section">
+        <div class="section-title">
+          <h2>검색되는 문제형 가이드</h2>
+          <p>제품 이름을 모르는 사람도 실제로 검색하는 문장으로 들어올 수 있게, 흔한 네트워크 증상별 설명을 정리했습니다.</p>
+        </div>
+        <div class="article-list">
+          <a class="article-card" href="./ping-normal-site-slow.html">
+            <strong>Ping은 정상인데 웹사이트가 느릴 때</strong>
+            <p>왕복 지연은 괜찮아도 DNS, 웹 서버, TLS, 프록시, VPN 때문에 느릴 수 있습니다.</p>
+          </a>
+          <a class="article-card" href="./tracert-star-star-star.html">
+            <strong>tracert에서 * * * 가 보이는 이유</strong>
+            <p>중간 장비가 진단 신호에 답하지 않는 것과 실제 연결 장애를 구분합니다.</p>
+          </a>
+          <a class="article-card" href="./vpn-site-slow.html">
+            <strong>VPN을 켜면 특정 사이트만 느릴 때</strong>
+            <p>경로 우회, DNS, 회사망 프록시, 지역 라우팅 문제를 순서대로 확인합니다.</p>
+          </a>
+          <a class="article-card" href="./dns-normal-site-not-opening.html">
+            <strong>DNS는 정상인데 사이트가 안 열릴 때</strong>
+            <p>이름 해석 이후에도 HTTPS, 방화벽, 서버 응답, 라우팅에서 막힐 수 있습니다.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="download-panel">
+          <div>
+            <h2>Windows에서 먼저 써보세요</h2>
+            <p>설치 파일은 GitHub Releases에서 배포합니다. itch.io에서는 구매 또는 후원으로 개발을 지원할 수 있습니다.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="button" href="https://github.com/Uwanggood/path-doctor-releases/releases/latest">GitHub Releases</a>
+            <a class="button secondary" href="https://uwanggood.itch.io/path-doctor">itch.io에서 보기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Path Doctor - Windows network diagnostic utility</span>
+        <div class="footer-links">
+          <a href="./sitemap.xml">Sitemap</a>
+          <a href="https://github.com/Uwanggood/path-doctor-releases">GitHub</a>
+          <a href="https://uwanggood.itch.io/path-doctor">itch.io</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

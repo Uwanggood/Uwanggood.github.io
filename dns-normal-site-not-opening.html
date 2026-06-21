@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DNS는 정상인데 웹사이트가 안 열릴 때 | Path Doctor</title>
+    <meta name="description" content="DNS lookup은 정상인데 웹사이트가 안 열릴 때 HTTPS, HTTP 응답, 방화벽, 서버 장애, 경로 문제를 확인하는 방법을 설명합니다.">
+    <link rel="canonical" href="https://uwanggood.github.io/dns-normal-site-not-opening.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="DNS는 정상인데 웹사이트가 안 열릴 때">
+    <meta property="og:description" content="이름 해석이 된다고 접속까지 보장되지는 않습니다. 다음 단계에서 막힐 수 있습니다.">
+    <meta property="og:url" content="https://uwanggood.github.io/dns-normal-site-not-opening.html">
+    <meta property="og:image" content="https://uwanggood.github.io/assets/path-doctor-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#article">본문으로 이동</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="./index.html"><span class="brand-mark">P</span><span>Path Doctor</span></a>
+        <div class="nav-links">
+          <a href="./index.html#guides">가이드</a>
+          <a href="https://github.com/Uwanggood/path-doctor-releases/releases/latest">다운로드</a>
+          <a href="https://uwanggood.itch.io/path-doctor">itch.io</a>
+        </div>
+      </nav>
+    </header>
+    <main id="article">
+      <section class="article-hero">
+        <div class="article-shell narrow">
+          <p class="article-kicker">DNS guide</p>
+          <h1>DNS는 정상인데 웹사이트가 안 열릴 때</h1>
+          <p>DNS가 성공했다는 것은 “주소를 찾았다”는 뜻입니다. 실제 웹 접속은 그 다음 단계에서 실패할 수 있습니다.</p>
+        </div>
+      </section>
+      <article class="article-shell narrow article-body">
+        <h2>DNS 성공 이후에도 실패할 수 있는 이유</h2>
+        <ul>
+          <li>서버가 HTTP 또는 HTTPS 요청에 응답하지 않음</li>
+          <li>방화벽이나 보안 프로그램이 연결을 막음</li>
+          <li>VPN, 프록시, 회사망 정책이 특정 도메인을 차단함</li>
+          <li>TLS 인증서나 SNI 단계에서 문제가 생김</li>
+          <li>라우팅 경로 중간에서 패킷 손실이 발생함</li>
+        </ul>
+
+        <div class="callout">
+          <strong>핵심</strong>
+          <p>DNS는 전화번호부에서 번호를 찾는 단계에 가깝습니다. 전화를 실제로 걸었을 때 상대가 받는지는 HTTP 응답을 봐야 합니다.</p>
+        </div>
+
+        <h2>확인 순서</h2>
+        <ol>
+          <li>같은 주소를 브라우저와 진단 도구에서 모두 확인합니다.</li>
+          <li>HTTP 상태 코드와 응답 시간을 봅니다.</li>
+          <li>ping 손실과 route가 마지막까지 이어지는지 확인합니다.</li>
+          <li>VPN, 프록시, 보안 프로그램을 잠시 끄고 비교합니다.</li>
+          <li>다른 네트워크에서 같은 사이트가 열리는지 확인합니다.</li>
+        </ol>
+
+        <h2>Path Doctor 활용</h2>
+        <p>Path Doctor는 DNS 결과와 HTTP 응답을 따로 보여주기 때문에 “이름 해석 문제”인지 “웹 접속 문제”인지 나누어 보기 쉽습니다.</p>
+
+        <div class="article-nav">
+          <a href="./ping-normal-site-slow.html">다시: ping은 정상인데 느림</a>
+          <a href="./index.html">홈으로 돌아가기</a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
+
