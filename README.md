@@ -13,6 +13,7 @@ https://uwanggood.github.io/
 | Project | Public URL | Custom domain | Source folder | Notes |
 | --- | --- | --- | --- | --- |
 | Path Doctor | https://uwanggood.github.io/path-doctor/ | Not connected | `path-doctor/` | Windows network diagnostic tool SEO site |
+| Bucket Studio | https://uwanggood.github.io/bucket-studio-downloads/ | Not connected | project Pages repo | S3-compatible storage browser public release site |
 
 Machine-readable registry:
 

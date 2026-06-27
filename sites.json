@@ -1,6 +1,6 @@
 {
   "owner": "Uwanggood",
-  "updated": "2026-06-21",
+  "updated": "2026-06-27",
   "sites": [
     {
       "name": "Path Doctor",
@@ -14,6 +14,20 @@
       "releaseRepository": "https://github.com/Uwanggood/path-doctor-releases",
       "storeUrl": "https://uwanggood.itch.io/path-doctor",
       "purpose": "SEO landing page and troubleshooting guides for the Path Doctor Windows utility."
+    },
+    {
+      "name": "Bucket Studio",
+      "slug": "bucket-studio-downloads",
+      "status": "live",
+      "type": "GitHub Pages project repository",
+      "primaryUrl": "https://uwanggood.github.io/bucket-studio-downloads/",
+      "koreanUrl": "https://uwanggood.github.io/bucket-studio-downloads/ko/",
+      "readableAliasUrl": null,
+      "customDomain": null,
+      "siteRepository": "https://github.com/Uwanggood/bucket-studio-downloads",
+      "releaseRepository": "https://github.com/Uwanggood/bucket-studio-downloads",
+      "storeUrl": null,
+      "purpose": "Public landing page and binary releases for the Bucket Studio S3-compatible storage browser."
     }
   ]
 }
