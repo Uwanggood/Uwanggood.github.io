@@ -15,6 +15,22 @@ https://uwanggood.github.io/
 | Path Doctor | https://uwanggood.github.io/path-doctor/ | Not connected | `path-doctor/` | Windows network diagnostic tool SEO site |
 | Bucket Studio | https://uwanggood.github.io/bucket-studio-downloads/ | Not connected | project Pages repo | S3-compatible storage browser public release site |
 
+## Privacy Policies
+
+Shared policy directory:
+
+```text
+https://uwanggood.github.io/privacy/
+```
+
+Current Microsoft Store privacy policy URL for local-first desktop apps:
+
+```text
+https://uwanggood.github.io/privacy/local-first/
+```
+
+This policy currently applies to Bucket Studio and Path Doctor. Future apps that add accounts, hosted cloud storage, advertising analytics, or server-side user profiles should get a separate policy category URL.
+
 Machine-readable registry:
 
 ```text

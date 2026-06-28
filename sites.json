@@ -1,6 +1,15 @@
 {
   "owner": "Uwanggood",
-  "updated": "2026-06-27",
+  "updated": "2026-06-28",
+  "privacyPolicies": [
+    {
+      "name": "Local-first desktop apps",
+      "slug": "local-first",
+      "url": "https://uwanggood.github.io/privacy/local-first/",
+      "appliesTo": ["Bucket Studio", "Path Doctor"],
+      "purpose": "Shared privacy policy for desktop apps that process user data locally and do not require a Uwanggood account server."
+    }
+  ],
   "sites": [
     {
       "name": "Path Doctor",
@@ -13,6 +22,7 @@
       "siteRepository": "https://github.com/Uwanggood/Uwanggood.github.io",
       "releaseRepository": "https://github.com/Uwanggood/path-doctor-releases",
       "storeUrl": "https://uwanggood.itch.io/path-doctor",
+      "privacyPolicyUrl": "https://uwanggood.github.io/privacy/local-first/",
       "purpose": "SEO landing page and troubleshooting guides for the Path Doctor Windows utility."
     },
     {
@@ -27,6 +37,7 @@
       "siteRepository": "https://github.com/Uwanggood/bucket-studio-downloads",
       "releaseRepository": "https://github.com/Uwanggood/bucket-studio-downloads",
       "storeUrl": null,
+      "privacyPolicyUrl": "https://uwanggood.github.io/privacy/local-first/",
       "purpose": "Public landing page and binary releases for the Bucket Studio S3-compatible storage browser."
     }
   ]
