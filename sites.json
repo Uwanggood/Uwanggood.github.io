@@ -1,6 +1,6 @@
 {
   "owner": "Uwanggood",
-  "updated": "2026-06-28",
+  "updated": "2026-07-17",
   "privacyPolicies": [
     {
       "name": "Local-first desktop apps",
@@ -39,6 +39,20 @@
       "storeUrl": null,
       "privacyPolicyUrl": "https://uwanggood.github.io/privacy/local-first/",
       "purpose": "Public landing page and binary releases for the Bucket Studio S3-compatible storage browser."
+    },
+    {
+      "name": "Copylight",
+      "slug": "copylight-downloads",
+      "status": "live",
+      "type": "GitHub Pages project repository",
+      "primaryUrl": "https://uwanggood.github.io/copylight-downloads/",
+      "readableAliasUrl": null,
+      "customDomain": null,
+      "siteRepository": "https://github.com/Uwanggood/copylight-downloads",
+      "releaseRepository": null,
+      "storeUrl": "https://apps.microsoft.com/detail/9p38ll7gj19j",
+      "privacyPolicyUrl": "https://uwanggood.github.io/copylight-downloads/privacy.html",
+      "purpose": "Public landing page, privacy policy, and Microsoft Store entry for the Copylight Windows clipboard manager."
     }
   ]
 }

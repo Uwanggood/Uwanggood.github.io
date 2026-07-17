@@ -14,6 +14,7 @@ https://uwanggood.github.io/
 | --- | --- | --- | --- | --- |
 | Path Doctor | https://uwanggood.github.io/path-doctor/ | Not connected | `path-doctor/` | Windows network diagnostic tool SEO site |
 | Bucket Studio | https://uwanggood.github.io/bucket-studio-downloads/ | Not connected | project Pages repo | S3-compatible storage browser public release site |
+| Copylight | https://uwanggood.github.io/copylight-downloads/ | Not connected | project Pages repo | Windows clipboard manager public landing page and Microsoft Store entry |
 
 ## Privacy Policies
 
@@ -29,7 +30,7 @@ Current Microsoft Store privacy policy URL for local-first desktop apps:
 https://uwanggood.github.io/privacy/local-first/
 ```
 
-This policy currently applies to Bucket Studio and Path Doctor. Future apps that add accounts, hosted cloud storage, advertising analytics, or server-side user profiles should get a separate policy category URL.
+This policy currently applies to Bucket Studio and Path Doctor. Copylight uses its dedicated policy at `https://uwanggood.github.io/copylight-downloads/privacy.html`. Future apps that add accounts, hosted cloud storage, advertising analytics, or server-side user profiles should get a separate policy category URL.
 
 Machine-readable registry:
 

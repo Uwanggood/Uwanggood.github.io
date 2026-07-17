@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://uwanggood.github.io/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://uwanggood.github.io/sites.html</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://uwanggood.github.io/privacy/</loc>
@@ -51,5 +51,13 @@
   <url>
     <loc>https://uwanggood.github.io/bucket-studio-downloads/ko/</loc>
     <lastmod>2026-06-27</lastmod>
+  </url>
+  <url>
+    <loc>https://uwanggood.github.io/copylight-downloads/</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://uwanggood.github.io/copylight-downloads/privacy.html</loc>
+    <lastmod>2026-07-12</lastmod>
   </url>
 </urlset>
